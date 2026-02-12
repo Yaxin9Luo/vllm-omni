@@ -143,7 +143,7 @@ def main():
         omni = Omni(model=model_name, **omni_kwargs)
 
         formatted_prompts = []
-        for p in args.prompts:
+        for p in prompts:
             if args.modality == "img2text":
                 if args.image_path:
                     loaded_image = Image.open(args.image_path).convert("RGB")
